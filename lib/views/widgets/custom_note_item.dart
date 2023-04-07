@@ -14,7 +14,7 @@ class NoteItem extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: const Color(0xffFFCC80),
-        borderRadius: BorderRadius.circular(16.0),
+        borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -24,37 +24,32 @@ class NoteItem extends StatelessWidget {
               'Flutter Tips',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 26.0,
+                fontSize: 26,
               ),
             ),
             subtitle: Padding(
-              padding: const EdgeInsets.only(
-                top: 16.0,
-                bottom: 16.0,
-              ),
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Text(
                 'Build your career with Faisal Nasir',
                 style: TextStyle(
-                  color: Colors.black.withOpacity(.5),
-                  fontSize: 18.0,
+                  color: Colors.black.withOpacity(0.5),
+                  fontSize: 18,
                 ),
               ),
             ),
             trailing: IconButton(
+              onPressed: () {},
               icon: const Icon(
                 FontAwesomeIcons.trash,
                 color: Colors.black,
-                size: 24.0,
+                size: 24,
               ),
-              onPressed: () {},
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              right: 24.0,
-            ),
+            padding: const EdgeInsets.only(right: 24.0),
             child: Text(
-              'May 21,2022',
+              'Apr 7,2023',
               style: TextStyle(
                 color: Colors.black.withOpacity(0.4),
                 fontSize: 16.0,
