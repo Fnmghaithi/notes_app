@@ -22,7 +22,6 @@ class AddNoteBottomSheet extends StatelessWidget {
             }
           },
           builder: (context, state) {
-            print('UI rebuild');
             return AbsorbPointer(
               absorbing: state is AddNoteLoading ? true : false,
               child: Padding(
